@@ -1,10 +1,17 @@
 package com.example.springtest.models;
 
 public class Dog implements Pet{
-    private String name;
-    private int age;
+    private String name = "Petr";
+    private int age = 22;
+/*
 
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+*/
 
+    @Override
     public void voice (){
         System.out.printf("Hi, I'm %s, %d years old", name, age);
     }
