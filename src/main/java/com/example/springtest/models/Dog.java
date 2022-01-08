@@ -3,17 +3,14 @@ package com.example.springtest.models;
 public class Dog implements Pet{
     private String name = "Petr";
     private int age = 22;
-/*
 
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Dog() {
+        System.out.println("Dog was born\n");
     }
-*/
 
     @Override
     public void voice (){
-        System.out.printf("Hi, I'm %s, %d years old", name, age);
+        System.out.printf("Hi, I'm %s, %d years old\n", name, age);
     }
 
     public String getName() {
