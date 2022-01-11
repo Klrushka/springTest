@@ -1,8 +1,8 @@
 package com.example.springtest.models;
 
 public class Dog implements Pet{
-    private String name = "Petr";
-    private int age = 22;
+    private String name;
+    private int age;
 
     public Dog() {
         System.out.println("Dog was born\n");
