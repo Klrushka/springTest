@@ -2,10 +2,11 @@ package com.example.springtest.models;
 
 public class Person {
     private Pet pet;
-
+/*
     public Person(Pet pet) {
         this.pet = pet;
     }
+*/
 
 
     public void callYourPet(){
@@ -18,6 +19,7 @@ public class Person {
     }
 
     public void setPet(Pet pet) {
+        System.out.println("Pet has been set");
         this.pet = pet;
     }
 }
