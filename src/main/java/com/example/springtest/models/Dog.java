@@ -13,6 +13,14 @@ public class Dog implements Pet{
         System.out.printf("Hi, I'm %s, %d years old\n", name, age);
     }
 
+    public void init(){
+        System.out.println("Class dog init method");
+    }
+
+    public void destroy(){
+        System.out.println("Class dog destroy method");
+    }
+
     public String getName() {
         return name;
     }
