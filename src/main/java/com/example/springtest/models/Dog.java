@@ -1,10 +1,16 @@
 package com.example.springtest.models;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 //Default id = "dog"
 @Component("dogBean")
+//Default scope = singleton
+@Scope("prototype")
 public class Dog implements Pet{
     @Value("${dog.name}")
     private String name;
@@ -20,10 +26,12 @@ public class Dog implements Pet{
         System.out.printf("Hi, I'm %s, %d years old\n", name, age);
     }
 
+    @PostConstruct
     public void init(){
         System.out.println("Class dog init method");
     }
 
+    @PreDestroy
     public void destroy(){
         System.out.println("Class dog destroy method");
     }
