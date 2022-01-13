@@ -6,8 +6,6 @@ import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
-    @Autowired
-    @Qualifier("dogBean")
     private Pet pet;
 
 
@@ -29,6 +27,8 @@ public class Person {
 
     // @Autowired
     // @Autowired can be used to any method
+    @Autowired
+    @Qualifier("dogBean")
     public void setPet(Pet pet) {
         System.out.println("Pet has been set");
         this.pet = pet;
