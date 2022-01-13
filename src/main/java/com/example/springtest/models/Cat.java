@@ -1,15 +1,15 @@
 package com.example.springtest.models;
 
+
 import org.springframework.stereotype.Component;
 
-//Default id = "dog"
-@Component("dogBean")
-public class Dog implements Pet{
-    private String name = "Bobik";
-    private int age = 3;
+@Component("catBean")
+public class Cat implements Pet{
+    private String name = "Murka";
+    private int age = 2;
 
-    public Dog() {
-        System.out.println("Dog was born\n");
+    public Cat() {
+        System.out.println("Cat was born\n");
     }
 
     @Override
@@ -18,11 +18,11 @@ public class Dog implements Pet{
     }
 
     public void init(){
-        System.out.println("Class dog init method");
+        System.out.println("Class cat init method");
     }
 
     public void destroy(){
-        System.out.println("Class dog destroy method");
+        System.out.println("Class cat destroy method");
     }
 
     public String getName() {
@@ -40,4 +40,5 @@ public class Dog implements Pet{
     public void setAge(int age) {
         this.age = age;
     }
+
 }
