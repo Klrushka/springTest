@@ -10,7 +10,7 @@ import javax.annotation.PreDestroy;
 //Default id = "dog"
 @Component("dogBean")
 //Default scope = singleton
-@Scope("prototype")
+@Scope
 public class Dog implements Pet{
     @Value("${dog.name}")
     private String name;
