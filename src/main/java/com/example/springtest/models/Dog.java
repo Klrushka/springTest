@@ -1,5 +1,9 @@
 package com.example.springtest.models;
 
+import org.springframework.stereotype.Component;
+
+//Default id = "dog"
+@Component("dogBean")
 public class Dog implements Pet{
     private String name;
     private int age;
