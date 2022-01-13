@@ -1,11 +1,14 @@
 package com.example.springtest.models;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 //Default id = "dog"
 @Component("dogBean")
 public class Dog implements Pet{
-    private String name = "Bobik";
+    @Value("${dog.name}")
+    private String name;
+    @Value("${dog.age}")
     private int age = 3;
 
     public Dog() {
