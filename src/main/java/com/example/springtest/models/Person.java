@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 public class Person {
     private Pet pet;
 
-    @Autowired
+/*    @Autowired
     public Person(Pet pet) {
         this.pet = pet;
-    }
+    }*/
 
 
     public void callYourPet(){
@@ -22,6 +22,8 @@ public class Person {
         return pet;
     }
 
+    @Autowired
+    // @Autowired can be used to any method
     public void setPet(Pet pet) {
         System.out.println("Pet has been set");
         this.pet = pet;
