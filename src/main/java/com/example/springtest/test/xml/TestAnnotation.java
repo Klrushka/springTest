@@ -2,6 +2,7 @@ package com.example.springtest.test.xml;
 
 
 import com.example.springtest.models.Dog;
+import com.example.springtest.models.Person;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,9 +14,9 @@ public class TestAnnotation {
                 new ClassPathXmlApplicationContext("applicationContextWithAnnotation.xml");
 
 
-        Dog dog = context.getBean("dogBean", Dog.class);
+        Person person = context.getBean("personBean", Person.class);
 
-        dog.voice();
+        person.callYourPet();
 
         context.close();
     }
