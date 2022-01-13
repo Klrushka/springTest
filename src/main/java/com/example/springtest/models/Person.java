@@ -9,11 +9,9 @@ public class Person {
     private Pet pet;
 
 
-/*
-    public Person(Pet pet) {
+    public Person( @Qualifier("dogBean")  Pet pet) {
         this.pet = pet;
     }
-*/
 
 
     public void callYourPet(){
@@ -27,8 +25,7 @@ public class Person {
 
     // @Autowired
     // @Autowired can be used to any method
-    @Autowired
-    @Qualifier("dogBean")
+    // @Qualifier("dogBean")
     public void setPet(Pet pet) {
         System.out.println("Pet has been set");
         this.pet = pet;
