@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 //Default id = "dog"
-@Component("dogBean")
+//@Component("dogBean")
 //Default scope = singleton
 @Scope
 public class Dog implements Pet{

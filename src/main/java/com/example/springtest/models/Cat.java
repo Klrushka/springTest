@@ -3,7 +3,7 @@ package com.example.springtest.models;
 
 import org.springframework.stereotype.Component;
 
-@Component("catBean")
+//@Component("catBean")
 public class Cat implements Pet{
     private String name = "Murka";
     private int age = 2;
