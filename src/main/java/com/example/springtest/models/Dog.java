@@ -12,9 +12,9 @@ import javax.annotation.PreDestroy;
 //Default scope = singleton
 @Scope
 public class Dog implements Pet{
-//    @Value("${dog.name}")
+    @Value("${dog.name}")
     private String name = "Bobik";
-//    @Value("${dog.age}")
+    @Value("${dog.age}")
     private int age = 3;
 
     public Dog() {
