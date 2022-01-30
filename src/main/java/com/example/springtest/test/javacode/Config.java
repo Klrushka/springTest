@@ -1,6 +1,5 @@
 package com.example.springtest.test.javacode;
 
-import com.example.springtest.models.Cat;
 import com.example.springtest.models.Dog;
 import com.example.springtest.models.Person;
 import com.example.springtest.models.Pet;
