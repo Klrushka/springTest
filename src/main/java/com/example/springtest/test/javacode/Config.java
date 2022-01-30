@@ -10,8 +10,6 @@ import org.springframework.context.annotation.*;
 //@ComponentScan("com.example.springtest")
 public class Config {
 
-
-
     @Bean
     @Scope("prototype")
     // beanId = method name
