@@ -1,5 +1,6 @@
 package com.example.springtest.aop;
 
+import com.example.springtest.aop.models.Book;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Test {
@@ -9,12 +10,10 @@ public class Test {
 
 
         UniLibrary uniLibrary = context.getBean("uniLibraryBean", UniLibrary.class);
-        SchoolLibrary schoolLibrary = context.getBean("schoolLibraryBean", SchoolLibrary.class);
+        Book book = context.getBean("bookBean", Book.class);
 
-        uniLibrary.getBook();
-        schoolLibrary.getBook();
-        uniLibrary.getMagazine();
-        uniLibrary.returnBook();
+        uniLibrary.addBook("ARK", book);
+        uniLibrary.addMagazine();
 
 
         context.close();
