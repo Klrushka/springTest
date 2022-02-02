@@ -1,7 +1,5 @@
-package com.example.springtest.models;
+package com.example.springtest.iocdi.models;
 
-
-import org.springframework.stereotype.Component;
 
 //@Component("catBean")
 public class Cat implements Pet{

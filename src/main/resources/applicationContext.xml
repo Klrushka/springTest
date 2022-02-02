@@ -11,7 +11,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="classpath:app.properties"/>
 
     <bean id="myPet"
-          class="com.example.springtest.models.Dog"
+          class="com.example.springtest.iocdi.models.Dog"
           init-method="init"
           destroy-method="destroy">
 <!--destroy method works only with scope="singleton" -->
@@ -22,7 +22,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     </bean>
 
     <bean id="person"
-          class="com.example.springtest.models.Person">
+          class="com.example.springtest.iocdi.models.Person">
         <property name="pet" ref="myPet"/>
     </bean>
 </beans>

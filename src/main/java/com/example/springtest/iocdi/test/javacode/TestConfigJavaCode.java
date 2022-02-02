@@ -1,7 +1,7 @@
-package com.example.springtest.test.javacode;
+package com.example.springtest.iocdi.test.javacode;
 
-import com.example.springtest.models.Person;
-import com.example.springtest.models.Pet;
+import com.example.springtest.iocdi.models.Pet;
+import com.example.springtest.iocdi.models.Person;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

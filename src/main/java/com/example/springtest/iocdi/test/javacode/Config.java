@@ -1,8 +1,8 @@
-package com.example.springtest.test.javacode;
+package com.example.springtest.iocdi.test.javacode;
 
-import com.example.springtest.models.Dog;
-import com.example.springtest.models.Person;
-import com.example.springtest.models.Pet;
+import com.example.springtest.iocdi.models.Dog;
+import com.example.springtest.iocdi.models.Person;
+import com.example.springtest.iocdi.models.Pet;
 import org.springframework.context.annotation.*;
 
 @Configuration

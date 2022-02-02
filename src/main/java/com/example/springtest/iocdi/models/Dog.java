@@ -1,8 +1,7 @@
-package com.example.springtest.models;
+package com.example.springtest.iocdi.models;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

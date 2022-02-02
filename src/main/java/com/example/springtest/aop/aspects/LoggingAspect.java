@@ -1,5 +1,6 @@
 package com.example.springtest.aop.aspects;
 
+import com.example.springtest.aop.models.Book;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -51,6 +52,21 @@ public class LoggingAspect {
         System.out.println("methodSignature.getName: " + methodSignature.getName());
 
 
+
+        if (methodSignature.getName().equals("addBook")){
+            Object[] args = joinPoint.getArgs();
+
+            for (Object obj: args){
+                if (obj instanceof Book){
+                    Book book = (Book) obj;
+
+                    System.out.println("book name: " + book.getName() + "\n" + "book author: " + book.getAuthor() + "\n" +
+                            "book date: " + book.getDate());
+                } else if (obj instanceof String){
+                    System.out.println("Who is added: " + obj);
+                }
+            }
+        }
 
         System.out.println("beforeAddLogicAdvice: smth add");
     }

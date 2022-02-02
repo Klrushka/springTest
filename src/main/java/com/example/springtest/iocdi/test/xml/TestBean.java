@@ -1,6 +1,6 @@
-package com.example.springtest.test.xml;
+package com.example.springtest.iocdi.test.xml;
 
-import com.example.springtest.models.Pet;
+import com.example.springtest.iocdi.models.Pet;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
